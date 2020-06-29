@@ -32,47 +32,20 @@ class SendDirectMessage
 	end
 =end
 
-	def send_photo(recipient_id)
-		dm_content = @content.generate_random_photo(recipient_id)
+	def send_pun(recipient_id)
+		dm_content = @content.generate_pun(recipient_id)
 		send_direct_message(dm_content)
 	end
 
 	#Saved for when we have a workaround for getting user location coordinates.
-	def send_weather_info(recipient_id, coordinates)
-		dm_content = @content.generate_weather_info(recipient_id, coordinates)
-		send_direct_message(dm_content)
-	end
-	
-  #Links are list based, and currently app has just one links list. 
-	def send_links_list(recipient_id)
-		dm_content = @content.generate_link_list(recipient_id)
+	def send_friendly_message(recipient_id, coordinates)
+		dm_content = @content.generate_friendly_message(recipient_id, coordinates)
 		send_direct_message(dm_content)
 	end
 
-	def send_link(recipient_id, choice)
-		dm_content = @content.generate_link(recipient_id, choice)
-		send_direct_message(dm_content)
-	end
 
-	#Snow reports are list based, and currently app has just one location list.
-	def send_locations_list(recipient_id)
-		dm_content = @content.generate_location_list(recipient_id)
-		send_direct_message(dm_content)
-	end
-
-	def send_location_info(recipient_id, choice)
-		dm_content = @content.generate_location_info(recipient_id, choice)
-		send_direct_message(dm_content)
-	end
-
-	#Links are list based, and currently app has just one links list.
-	def send_playlists_list(recipient_id)
-		dm_content = @content.generate_playlist_list(recipient_id)
-		send_direct_message(dm_content)
-	end
-
-	def send_playlist(recipient_id, choice)
-		dm_content = @content.generate_playlist(recipient_id, choice)
+	def send_fact(recipient_id, choice)
+		dm_content = @content.generate_fact(recipient_id, choice)
 		send_direct_message(dm_content)
 	end
 	
