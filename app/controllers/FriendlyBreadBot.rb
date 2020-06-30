@@ -13,7 +13,7 @@ class FriendlyBreadBot < Sinatra::Base
 
 	#Load authentication details
 	keys = {}
-	set :dm_api_consumer_secret, ENV['CONSUMER_SECRET'] #Account Activity API with OAuth
+	set :dm_api_consumer_secret, ENV['mrEv9N67iC2taogKS089pkn41F4oxL4w0JdwZXzOaugFSCatJX'] #Account Activity API with OAuth
 
 	set :title, 'friendlybreadbot'
 
