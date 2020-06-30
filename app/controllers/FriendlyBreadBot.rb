@@ -28,7 +28,6 @@ class FriendlyBreadBot < Sinatra::Base
      <p>I will try to respond to messages and tell you good things</p>
      <p></p>
      <p>#FriendlyBreadBot...</p>'
-     puts "handling  build"
 	end
 
 	# Receives challenge response check (CRC).
