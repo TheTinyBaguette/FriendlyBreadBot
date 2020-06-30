@@ -39,7 +39,7 @@ class FriendlyBreadBot < Sinatra::Base
 			#puts "CRC event with #{crc_token}"
 			#puts "headers: #{headers}"
 			#puts headers['X-Twitter-Webhooks-Signature']
-
+				puts "handling CRC event"
 			response = {}
 			response['response_token'] = "sha256=#{generate_crc_response(settings.dm_api_consumer_secret, crc_token)}"
 
@@ -55,7 +55,7 @@ class FriendlyBreadBot < Sinatra::Base
 		#puts "Received event(s) from DM API"
 		request.body.rewind
 		events = request.body.read
-
+		puts "handling an event"
 		manager = EventManager.new
 		manager.handle_event(events)
 

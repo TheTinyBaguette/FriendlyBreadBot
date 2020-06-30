@@ -29,6 +29,8 @@ class EventManager
 		elsif response_metadata == 'return_home'
 			puts "Returning to home in event manager...."
 			@DMSender.send_welcome_message(user_id)
+		elsif response_metadata == 'info'
+			@DMSender.send_system_info(user_id)
 			
 		#Custom options	
 		elsif response_metadata == 'friendly_message'

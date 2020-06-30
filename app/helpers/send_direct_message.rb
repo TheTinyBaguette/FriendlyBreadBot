@@ -32,7 +32,7 @@ class SendDirectMessage
 	end
 =end
 
-	def send_pun(recipient_id)
+	def send_pun(recipient_id, choice)
 		dm_content = @content.generate_pun(recipient_id)
 		send_direct_message(dm_content)
 	end
