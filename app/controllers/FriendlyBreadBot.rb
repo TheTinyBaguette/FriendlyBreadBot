@@ -41,7 +41,7 @@ class FriendlyBreadBot < Sinatra::Base
 			#puts headers['X-Twitter-Webhooks-Signature']
 				puts "handling CRC event"
 			response = {}
-			response['response_token'] = "sha256=#{generate_crc_response(settings.dm_api_consumer_secret, crc_token)}"
+			response['response_token'] = "sha256=#{generate_crc_response(dm_api_consumer_secret, crc_token)}"
 
 			body response.to_json
 		end
