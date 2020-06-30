@@ -23,10 +23,10 @@ class ApiOauthRequest
 
 		if config.nil?
       #Load keys from ENV.
-			@keys['consumer_key'] = ENV['CONSUMER_KEY']
-			@keys['consumer_secret'] = ENV['CONSUMER_SECRET']
-			@keys['access_token'] = ENV['ACCESS_TOKEN']
-			@keys['access_token_secret'] = ENV['ACCESS_TOKEN_SECRET']
+			@keys['consumer_key'] = ENV['VJQQJBrefWZGEf32fWGn7n8Ma']
+			@keys['consumer_secret'] = ENV['mrEv9N67iC2taogKS089pkn41F4oxL4w0JdwZXzOaugFSCatJX']
+			@keys['access_token'] = ENV['1042152965312860160-061ah8zIt3Rn8acTMn5NgvhAFIV3Sv']
+			@keys['access_token_secret'] = ENV['ullv8QZm2yZNWXgoxOFz93M0OEoLcg6WTEmmj0JWy5nYc']
 		else
 			#Load from config file.
 			@keys = YAML::load_file(config)
