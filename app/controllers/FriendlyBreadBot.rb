@@ -27,7 +27,7 @@ class FriendlyBreadBot < Sinatra::Base
      <p>I just want people to be happy and have a good time... </p>
      <p>I will try to respond to messages and tell you good things</p>
      <p></p>
-     <p>#FriendlyBreadBot...</p>'
+     <p>#FriendlyBreadBot</p>'
 	end
 
 	# Receives challenge response check (CRC).

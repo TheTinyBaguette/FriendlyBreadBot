@@ -29,7 +29,11 @@ class ApiOauthRequest
 			@keys['access_token_secret'] = 'ullv8QZm2yZNWXgoxOFz93M0OEoLcg6WTEmmj0JWy5nYc'
 		else
 			#Load from config file.
-			@keys = YAML::load_file(config)
+			@keys['consumer_key'] = 'VJQQJBrefWZGEf32fWGn7n8Ma'
+			@keys['consumer_secret'] = 'mrEv9N67iC2taogKS089pkn41F4oxL4w0JdwZXzOaugFSCatJX'
+			@keys['access_token'] = '1042152965312860160-061ah8zIt3Rn8acTMn5NgvhAFIV3Sv'
+			@keys['access_token_secret'] = 'ullv8QZm2yZNWXgoxOFz93M0OEoLcg6WTEmmj0JWy5nYc'
+			#@keys = YAML::load_file(config)
 		end
 
   end
